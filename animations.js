@@ -67,17 +67,49 @@ function animate() {
 }
 animate();
 
-// ===== TILT EFFECT ON PHOTO =====
+// ===== PHYSICS COIN FLIP ON PHOTO =====
 const photoWrapper = document.querySelector('.photo-wrapper');
 if (photoWrapper) {
-  photoWrapper.addEventListener('mousemove', (e) => {
-    const rect = photoWrapper.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width - 0.5;
-    const y = (e.clientY - rect.top) / rect.height - 0.5;
-    photoWrapper.style.transform = `rotateY(${x * 30}deg) rotateX(${-y * 30}deg) scale(1.05)`;
+  let rotX = 0, rotY = 0;
+  let velX = 0, velY = 0;
+  let lastMouseX = 0, lastMouseY = 0;
+  let dragging = false;
+
+  photoWrapper.style.transition = 'none';
+
+  function animatePhoto() {
+    if (!dragging) {
+      velX *= 0.95;
+      velY *= 0.95;
+      rotY += velX;
+      rotX += velY;
+    }
+    photoWrapper.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+    requestAnimationFrame(animatePhoto);
+  }
+  animatePhoto();
+
+  photoWrapper.addEventListener('mousedown', (e) => {
+    dragging = true;
+    lastMouseX = e.clientX;
+    lastMouseY = e.clientY;
+    e.preventDefault();
   });
-  photoWrapper.addEventListener('mouseleave', () => {
-    photoWrapper.style.transform = 'rotateY(0) rotateX(0) scale(1)';
+
+  window.addEventListener('mousemove', (e) => {
+    if (!dragging) return;
+    const dx = e.clientX - lastMouseX;
+    const dy = e.clientY - lastMouseY;
+    velX = dx * 0.4;
+    velY = dy * 0.4;
+    rotY += dx * 0.4;
+    rotX += dy * 0.4;
+    lastMouseX = e.clientX;
+    lastMouseY = e.clientY;
+  });
+
+  window.addEventListener('mouseup', () => {
+    dragging = false;
   });
 }
 const nameEl = document.querySelector('.flame-name');

@@ -148,15 +148,79 @@ a:hover {
 }
 
 /* ===== PROFILE PHOTO ===== */
-img {
+.photo-wrapper {
+  float: right;
+  margin: 0 0 1.5rem 2rem;
+  position: relative;
   width: 30%;
   max-width: 200px;
+  border-radius: 50%;
+  cursor: grab;
+  transform-style: preserve-3d;
+  perspective: 600px;
+}
+
+.photo-wrapper img {
+  width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 50%;
   border: 3px solid var(--accent);
   box-shadow: 0 0 30px rgba(108, 99, 255, 0.3);
-  float: right;
-  margin: 0 0 1.5rem 2rem;
+  float: none;
+  margin: 0;
+  display: block;
+  animation: pulse-glow 2.5s ease-in-out infinite;
+  transition: box-shadow 0.3s;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.3), 0 0 40px rgba(108, 99, 255, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(108, 99, 255, 0.7), 0 0 80px rgba(108, 99, 255, 0.3);
+  }
+}
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(108, 99, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  gap: 0.25rem;
+}
+
+.photo-overlay p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+.photo-overlay span {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.photo-wrapper:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-wrapper:hover img {
+  box-shadow: 0 0 60px rgba(108, 99, 255, 0.9), 0 0 120px rgba(108, 99, 255, 0.4);
+}
+
+@media (max-width: 560px) {
+  .photo-wrapper { width: 80px; max-width: 80px; }
 }
 
 /* ===== GITHUB STATS ===== */
