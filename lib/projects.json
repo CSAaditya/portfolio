@@ -1,0 +1,74 @@
+[
+  {
+    "title": "TikTok Video Management Platform",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built a FastAPI backend with user authentication, bulk download, and direct TikTok upload functionality. Integrated Redis and Celery for background task processing."
+  },
+  {
+    "title": "Parkinson's Disease Detection from EEG",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Classified Parkinson's Disease from EEG signals using XGBoost and a CNN-LSTM hybrid model with custom feature extraction across five frequency bands."
+  },
+  {
+    "title": "ML Model Trainer Web Application",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Developed a web app for training and evaluating machine learning models, leveraging pandas, numpy, and scikit-learn."
+  },
+  {
+    "title": "Grocery Store NOVA Food Classification",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Analyzed grocery product data from Walmart, Target, and Whole Foods using NOVA food processing classifications. Built grouped bar charts for comparing store compositions."
+  },
+  {
+    "title": "SQL Analytics — Chinook & Airlines",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Wrote complex queries, relational algebra, and optimized database performance with clustered and nonclustered indexes on PostgreSQL."
+  },
+  {
+    "title": "BCI Motor Imagery Classification",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built a brain-computer interface pipeline using Common Spatial Patterns and Linear Discriminant Analysis to classify motor imagery EEG signals."
+  },
+  {
+    "title": "P300 EEG Signal Analysis",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Analyzed P300 event-related potentials from EEG data, performing signal processing and feature extraction for BCI applications."
+  },
+  {
+    "title": "TF-IDF Text Classification Pipeline",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Built a full scikit-learn pipeline for text classification using TF-IDF features, covering data wrangling, feature engineering, and model evaluation."
+  },
+  {
+    "title": "Personal Portfolio Website",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Designed and built a personal portfolio site with HTML and CSS, published on GitHub Pages with a CV, projects, and contact form."
+  },
+  {
+    "title": "Probability & Combinatorics Problem Sets",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Worked through advanced probability problems including counting, inclusion-exclusion, Bayes rule, conditional probability, and binomial distributions."
+  },
+  {
+    "title": "Econometrics Research — ECON 120A",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Applied econometric methods including OLS regression, hypothesis testing, and statistical inference to real-world economic datasets."
+  },
+  {
+    "title": "Graph Theory & Algorithm Analysis",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Implemented connected components, BFS and DFS algorithms, and analyzed time complexity of various data structures and sorting algorithms."
+  }
+]
