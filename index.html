@@ -8,6 +8,8 @@
 </head>
 <body>
 
+  <canvas id="particle-canvas"></canvas>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="projects/index.html">Projects</a>
@@ -16,8 +18,15 @@
     <a href="https://github.com/CSAaditya" target="_blank">GitHub</a>
   </nav>
 
-  <h1>Aaditya</h1>
-  <img src="images/toto.jpg" alt="A photo of Toto Wolff">
+  <h1><span class="flame-name">Aaditya</span></h1>
+
+  <div class="photo-wrapper">
+    <img src="images/toto.jpg" alt="A photo of Toto Wolff">
+    <div class="photo-overlay">
+      <p>Toto Wolff</p>
+      <span>Mercedes AMG F1</span>
+    </div>
+  </div>
 
   <p>
     I'm a Data Science and Cognitive Science student at UC San Diego interested in
@@ -29,6 +38,7 @@
   <h2>Latest Projects</h2>
   <div class="projects"></div>
 
+  <script src="animations.js" type="module"></script>
   <script src="index.js" type="module" defer></script>
 
 </body>
