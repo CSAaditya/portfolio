@@ -8,6 +8,8 @@
 </head>
 <body>
 
+  <canvas id="particle-canvas"></canvas>
+
   <nav>
     <a href="../index.html">Home</a>
     <a href="../projects/index.html">Projects</a>
@@ -16,68 +18,66 @@
     <a href="https://github.com/CSAaditya" target="_blank">GitHub</a>
   </nav>
 
-  <h1>Aaditya Aswadhati</h1>
-  <p>San Ramon, CA &nbsp;·&nbsp; aaswadhati@ucsd.edu &nbsp;·&nbsp; <a href="https://github.com/CSAaditya" target="_blank">github.com/CSAaditya</a></p>
+  <h1>Curriculum Vitae</h1>
+  <p>UC San Diego · Data Science & Cognitive Science · Expected Graduation: <time datetime="2026">2026</time></p>
 
   <section>
     <h2>Education</h2>
-    <article>
+    <div class="cv-entry">
       <h3>University of California, San Diego</h3>
-      <p><time datetime="2022">2022</time> – <time datetime="2026">2026</time> &nbsp;·&nbsp; B.S. Data Science / Cognitive Science</p>
-      <p>Relevant coursework: Data Science (DSC 80), Databases (DSC 100), Brain-Computer Interfaces (COGS 189), Econometrics (ECON 120A), Probability (Math 180-A), Algorithms &amp; Data Structures.</p>
-    </article>
+      <time datetime="2022">2022</time> – <time datetime="2026">2026</time>
+      <p>B.S. Data Science / Cognitive Science</p>
+      <p>Relevant coursework: DSC 80, DSC 100, COGS 189, ECON 120A, Math 180-A, Algorithms &amp; Data Structures.</p>
+    </div>
   </section>
 
   <section>
     <h2>Experience</h2>
-
-    <article>
+    <div class="cv-entry">
       <h3>Software Engineering Intern — Oto</h3>
-      <p><time datetime="2025-08">August 2025</time> – <time datetime="2025-11">November 2025</time></p>
-      <p>
-        Built a TikTok video management platform using FastAPI with user authentication, bulk download, and direct TikTok upload functionality. Integrated Redis and Celery for background task processing.
-      </p>
-    </article>
-
-    <article>
+      <time datetime="2025-08">August 2025</time> – <time datetime="2025-11">November 2025</time>
+      <p>Built a TikTok video management platform using FastAPI with user authentication, bulk download, and direct TikTok upload. Integrated Redis and Celery for background task processing.</p>
+    </div>
+    <div class="cv-entry">
       <h3>Software Engineering Intern — Million Views LLC</h3>
-      <p><time datetime="2024">2024</time></p>
-      <p>
-        Tested and improved backend systems while collaborating with cross-functional development teams.
-        Gained hands-on experience in data-driven decision making and production software workflows.
-      </p>
-    </article>
-
-
-
+      <time datetime="2024">2024</time>
+      <p>Tested and improved backend systems while collaborating with cross-functional development teams.</p>
+    </div>
   </section>
 
   <section>
     <h2>Projects</h2>
-
-    <article>
+    <div class="cv-entry">
       <h3>Parkinson's Disease Detection from EEG</h3>
-      <p>Classified Parkinson's Disease from EEG signals using XGBoost and a CNN-LSTM hybrid model with custom feature extraction. Co-authored research report on model results and BCI analysis using CSP/LDA and P300 event-related potentials.</p>
-    </article>
-
-    <article>
+      <time datetime="2025">2025</time>
+      <p>Classified Parkinson's Disease from EEG signals using XGBoost and CNN-LSTM. Co-authored research report on BCI analysis using CSP/LDA and P300 event-related potentials.</p>
+    </div>
+    <div class="cv-entry">
       <h3>ML Model Trainer Web Application</h3>
-      <p>Developed a web app for training and evaluating machine learning models, leveraging pandas, numpy, and scikit-learn.</p>
-    </article>
-
+      <time datetime="2024">2024</time>
+      <p>Web app for training and evaluating ML models using pandas, numpy, and scikit-learn.</p>
+    </div>
   </section>
 
   <section>
     <h2>Skills</h2>
-    <ul>
-      <li>Python (pandas, numpy, scikit-learn, XGBoost, PyTorch)</li>
-      <li>FastAPI &nbsp;·&nbsp; Redis &nbsp;·&nbsp; Celery</li>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>pandas</li>
+      <li>scikit-learn</li>
+      <li>XGBoost</li>
+      <li>PyTorch</li>
+      <li>FastAPI</li>
+      <li>Redis</li>
+      <li>Celery</li>
       <li>SQL / PostgreSQL</li>
       <li>Git / GitHub</li>
       <li>HTML &amp; CSS</li>
-      <li>Probability, Statistics &amp; Econometrics</li>
+      <li>Econometrics</li>
     </ul>
   </section>
+
+  <script src="../animations.js" type="module"></script>
 
 </body>
 </html>

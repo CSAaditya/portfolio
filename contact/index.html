@@ -8,9 +8,12 @@
 </head>
 <body>
 
+  <canvas id="particle-canvas"></canvas>
+
   <nav>
     <a href="../index.html">Home</a>
     <a href="../projects/index.html">Projects</a>
+    <a href="../cv/index.html">CV</a>
     <a href="index.html">Contact</a>
     <a href="https://github.com/CSAaditya" target="_blank">GitHub</a>
   </nav>
@@ -18,10 +21,10 @@
   <h1>Contact</h1>
   <p>Feel free to reach out about research, projects, or opportunities.</p>
 
-  <form action="mailto:aaswadhati@ucsd.edu" method="POST" enctype="text/plain">
+  <form class="contact-form" action="mailto:aaswadhati@ucsd.edu" method="POST" enctype="text/plain">
 
     <label>
-      Email
+      Your Email
       <input type="email" name="email" value="example@email.com">
     </label>
 
@@ -35,9 +38,11 @@
       <textarea name="body">Hi Aaditya, I came across your portfolio and wanted to reach out...</textarea>
     </label>
 
-    <button>Submit</button>
+    <button>Send Message</button>
 
   </form>
+
+  <script src="../animations.js" type="module"></script>
 
 </body>
 </html>
